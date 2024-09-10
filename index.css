@@ -1,0 +1,64 @@
+body { /* makes all text black and the whole page background orange*/ 
+  color: black;
+  background-color: orange;
+}
+
+h1 { /* a darker orange is applied as a background for some sections for contrast*/
+  background-color: orangered;
+  text-align: center;
+}
+
+h2 {
+  background-color: orangered;
+  text-align: center;
+}
+
+.links {
+  text-align: center;
+  font-size: 25px;
+}
+
+.foodgrid { /*the grid is made using the display inline-grid and styled by making each column take only 45% of the screen width so that
+  it can fit on any screen rather than specifying a specific pixel amount and hoping it fits every display. some other stylings are added
+  like padding and gaps just to make it look a bit cleaner */
+  display: inline-grid;
+  grid-column-start: auto;
+  grid-template-columns: 45% 45%;
+  position: absolute;
+  column-gap: 10px;
+  padding-left: 7.5%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 25px;
+}
+
+.section { /*This adds padding and centers the content in each grid section so it looks nicer and sets font size for the text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
+  font-size: 25px;
+  padding: 20px;
+}
+
+img { /* images receive a black border to pop more and are set at a % width so they fit properly*/
+border: 1px solid #000000;
+border-color: #000000;
+background-color: #000000;
+border-radius: 4px;
+padding: 5px;
+width: 45%;
+}
+
+table, th, td { /* table is given a thin black border, custom font size, and a darker background to pop more*/
+  border:1px solid black;
+  font-size: 20px;
+  background-color: orangered;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Cafedesc {
+  text-align: center;
+  font-size: 25px;
+}

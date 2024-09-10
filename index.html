@@ -1,0 +1,86 @@
+<!--
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Shakib Tidjani, UMass Lowell Computer Science, Shakib_Tidjani@student.uml.edu
+Copyright (c) 2021 by Shakib. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUI-1 HW-1 Shakib Tidjani</title>
+    <link rel="stylesheet" href="index.css"> <!--Links to the index.css document-->
+</head>
+<body>
+    <h1>&bigstar;Caf&eacute;&bigstar;</h1> <!--accent e for the word cafe and decorative stars are gotten from the html entities eacute and bigstar-->
+    <p class = "Cafedesc">Caf&eacute;s are types of restaurants which predominantly serve coffee and baked goods. Theyre popular
+        social settings and are often times a place for casual work or relaxation as opposed to a usual restaurant
+        setting which is more strictly for eating. Here you will see some popular kinds of food and drink which you
+        can expect to find in a Caf&eacute;. More information can be found at: <a class = "CafeDesc" href="https://esquirescoffee.co.uk/news/why-coffee-shops-so-popular/">This site.</a>
+    </p>
+    <table> <!--basic table, tr defines rows, th defines headers, and td defines data-->
+        <tr>
+          <th>Food</th>
+          <th>Drinks</th>
+        </tr>
+        <tr>
+          <td>Croissants <br> Donuts</td>
+          <td>Coffee <br> Juice</td>
+        </tr>
+    </table>
+    <div class="credits"> <!--since i do not own the images I used, hyperlinks are provided to the sources of each image-->
+        <h2>&bigstar;Image Credits:&bigstar;</h2>
+        <div class="links">
+            <a href="https://sarahsvegankitchen.com/recipes/vegan-croissants/">Croissants</a>
+            <a href="https://www.bbcgoodfood.com/recipes/flat-white">Coffee</a>
+            <a href="https://www.thepioneerwoman.com/food-cooking/recipes/a9896/homemade-glazed-doughnuts/">Donuts</a>
+            <a href="https://theallnaturalvegan.com/best-gut-healthy-papaya-juice/">Juice</a>
+        </div>
+    </div>
+    <div class = "foodgrid"> <!--this div defines a section of the page that I use a grid to make. i wanted a style where an image
+        and a description of the image can be found side by side, and I wanted to alternate the positions of images and text so I
+        used a grid to do so. This is simply done by sectioning out images and description paragraphs and the rest is done using css styling-->
+        <div class = "section"><img class = "img_cls" src="images/croissants.jpg" alt="Croissants"></div>
+        <div class = "section"><p>A croissant is a flaky pastry made from folding layers of dough and butter together,
+            eventually made and baked into a crescent shape. Its a popular pastry which originates from France.
+        </p></div>
+
+        <div class = "section"><p>Coffee is a drink made by brewing ground coffee beans in water. This creates
+            a dark and bitter drink which is either drank black as is, or combined with some kind of
+            flavoring, sugar, and/or cream in order to enhance the flavor or take some of the bitterness away.
+            Its a popular drink because of its caffeinating properties, making it a common drink in the
+            morning, and is always served in a Caf&eacute;.
+        </p></div>
+        <div class = "section"><img class = "img_cls" src="images/coffee.jpg" alt="Coffee"></div>
+
+        <div class = "section"><img class = "img_cls" src="images/donuts.png" alt="Donuts"></div>
+        <div class = "section"><p>Donuts are a kind of pastry made from frying dough. While they can be eaten plain, donuts
+            are often accompanied with a variety of toppings including but not limited to, sugar, frosting, fruit, etc.
+            Donuts have early origins in Latin America, but were popularized greatly in England and North America.
+            Theyre extremely popular and are paired often with coffee, making them a common Caf&eacute; pastry.
+        </p></div>
+
+            <div class = "section"><p>Juice is a drink made from pressing fruits and/or vegetables in order to extract their natural
+                liquids. Theyre a refreshing way to consume fruits and are a popular morning time drink, which means they
+                commonly are sold in Caf&eacute;s as an alternative to the more popular coffee.
+            </p></div>
+            <div class = "section"><img class = "img_cls" src="images/juice.jpg" alt="Juice"></div>
+    </div>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss"
+                alt="Valid CSS!" />
+        </a>
+    </p>
+    <p>
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0;width:88px;height:31px"
+                src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+            </a>
+    </p>    
+</body>
+</html>
